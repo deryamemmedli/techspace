@@ -1,0 +1,12 @@
+create table order_table(
+
+id int primary key auto_increment,
+ordernumber varchar(20) not null unique,
+data_type varchar(200) not null,
+orderdate date not null,
+totalamount decimal(10,2) not null,
+iscompleted boolean not null default false, 
+currency varchar(10) not null default 'AZN' ,
+isapproved boolean not null default true
+
+)
